@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1(){
@@ -102,7 +103,7 @@ public class Main {
         short capacityOfOneTrain = 102;
         short seatPlace = 60;
         int standingPlaces = capacityOfOneTrain - seatPlace;
-        System.out.println(standingPlaces);
+//        System.out.println(standingPlaces);
         boolean thereAreNoSeatsInTheTrain = seatPlace >= 60 && standingPlaces >= 42;
         if (thereAreNoSeatsInTheTrain){
             System.out.println("В вагоне нет мест: сидячих мест " + seatPlace + " , стоячих мест " + standingPlaces);
@@ -111,5 +112,24 @@ public class Main {
         }
 
     }
+
+    public static void task7(){
+        System.out.println("Задача 7");
+        int one = 7;
+        int two = 3;
+        int three = 5;
+        boolean oneMoreThanAll = one > two && one > three;
+        boolean twoMoreThanAll = two > one && two > three;
+        boolean threeMoreThanAll = three > one && three > two;
+        if (oneMoreThanAll){
+            System.out.println("Переменная one больше, ее значение: " + one);
+        } else if (twoMoreThanAll) {
+            System.out.println("Переменная two больше, ее значение: " + two);
+        } else if (threeMoreThanAll){
+            System.out.println("Переменная three больше, ее значение: " + three);
+        }
+
+    }
+
 
 }
