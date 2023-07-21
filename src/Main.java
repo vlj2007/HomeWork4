@@ -115,12 +115,12 @@ public class Main {
 
     public static void task7(){
         System.out.println("Задача 7");
-        int one = 7;
+        int one = 3;
         int two = 3;
-        int three = 5;
-        boolean oneMoreThanAll = one > two && one > three;
-        boolean twoMoreThanAll = two > one && two > three;
-        boolean threeMoreThanAll = three > one && three > two;
+        int three = 1;
+        boolean oneMoreThanAll = one >= two && one >= three;
+        boolean twoMoreThanAll = two >= one && two >= three;
+        boolean threeMoreThanAll = three >= one && three >= two;
         if (oneMoreThanAll){
             System.out.println("Переменная one больше, ее значение: " + one);
         } else if (twoMoreThanAll) {
